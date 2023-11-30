@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #3c9ae868;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.nav img{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.title{
+  font-size: larger;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+.cont:hover{
+  cursor: pointer;
+}
+.cont{
+  font-size: 1em;
+}
+.container{
+  background-image: url('./components/pic/bg1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.rep{
+
+  border: 1px solid rgba(27, 26, 26, 0.189);
+  height: 18rem;
+  width: 18rem;
+  border-radius: 1rem;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+.temp{
+  font-size:xx-large;
+  font-weight: bolder;
+}
+.time{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: medium;
+
+}
+input{
+  height: 1.5rem;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 1rem;
+  outline: none;
+  padding: 0.2rem;
+}
+button{
+  height: 2rem;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  /* font-size: larger; */
+  font-weight: bold;
+  background: #63c9f19f;
+  /* background:transparent; */
+}
+button:hover{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+ .container{
+  height: 100vh;
+ }
+ .cont{
+  display: none;
+ }
+ .nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+}

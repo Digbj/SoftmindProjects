@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+        /* p{
+          font-size: xx-large;  
+        } */
+    </style>
+</head>
+<body>
+    <!-- <p id="p1">hello</p>
+    <p id="p2">hello</p>
+    <p id="p3">hello</p> -->
+    <input class="inp" type="email" placeholder="email"  required/>
+    <button onclick=submit()>Add</button>
+    <ul id="para"></ul>
+    
+
+<script >
+
+
+
+    function submit(){
+let nam=document.querySelector(".inp").value;
+console.log(nam)
+if(nam!==""){
+
+  document.getElementById("para").innerHTML+=`<li>${nam}</li>`
+  document.querySelector(".inp").value=''
+
+
+}
+// let p=document.querySelector("#para");
+// p.innerHTML()=nam
+    }
+        </script>
+
+</body>
+
+</html>

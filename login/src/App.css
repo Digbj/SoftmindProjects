@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container{
+  background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+.login{
+ width: 90%;
+ max-width: 200px;
+ color: #fafdfc;
+ padding: 30px 35px;
+ border: 1px solid rgba(255,255,255,0.3);
+ background:rgba(255,255,255,0.2);
+ border-radius:1rem;
+ box-shadow: 0.4px 30px rgba(0,0,0,0.1);
+ backdrop-filter: blur(0.5rem);
+}
+.inp{
+
+  gap: 1rem;
+}
+.inp>input{
+  margin: 0.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  color: #ffff;
+  border: 1px solid black;
+  border: 1px;
+  padding-left: 1rem;
+  background-color: rgba(255,255,255,0.2);
+  border: hidden;
+  outline: hidden;
+  
+}
+.inp>input:focus{
+  outline: none;
+}
+::placeholder {
+  color:#ffff;
+  opacity: 0.5; /* Firefox */
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.for{
+  margin-left: -5rem;
+  font-size: small;
+  margin-top: -0.4rem;
+}
+button{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: hidden;
+}
+button:hover{
+  background:#ffffff9a;
+  cursor: pointer;
+}
+.msg{
+  color:red;
+}
+
+.tog{
+  color: bisque;
+  text-decoration: underline;
+}
+.tog:hover{
+  cursor: pointer;
+}
+.for{
+  color: aliceblue;
+}
+.for:hover{
+  cursor: pointer;
+}
+.home{
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+ .login{
+  backdrop-filter: blur(0.5px);
+  background-color: rgba(255, 255, 255, 0.068);
+  
+ }
+ ::placeholder {
+  color:#ffff;
+  opacity: 1; /* Firefox */
+}
+}

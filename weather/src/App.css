@@ -1,0 +1,88 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container{
+  background-image: url("./components/pic/bg.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav{
+  background:rgba(148, 211, 240, 0.699);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav>div{
+  padding: 0.8rem;
+}
+.img{
+  height: 2rem;
+  width: 2rem;
+}
+.title{
+  font-size: larger;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+.contact{
+  font-size: small;
+
+}
+.contact:hover{
+  cursor: pointer;
+  text-shadow: #616869;
+}
+.report{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+}
+.cont1{
+  margin-top: 10rem;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
